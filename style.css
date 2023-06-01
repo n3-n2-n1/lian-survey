@@ -1,199 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-body {
-	background-color: #ffffff;
+
+html, body {
 	font-family: 'Roboto', sans-serif;
+	min-height: 100%;
 }
 
-p {
-	display: flex;
+body {
+	background-color: #000000 !important;
+	font-family: 'Roboto', sans-serif;
+	color: white !important;
+
 }
 
-.navbar {
-	width: 100%;
-}
-
-.conditional {
-	display: flex;
-	color: white;
-	align-items: flex-start;
-	width: 100%;
-	gap: 10px;
-}
-
-/* =============================================================================== */
-
-form {
-	display: flex;
-	max-width: 860px;
-	margin: 0 auto;
-}
-
-fieldset {
-	margin-bottom: 20px;
-	border: none;
-	justify-content: center;
-}
-
-label {
-	display: block;
-	margin-bottom: 5px;
-}
-
-input[type="radio"],
-input[type="text"] {
-	margin-left: 10px;
-}
-
-p {
-	margin-bottom: 10px;
-	color: white;
-}
-
-.center {
-	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	width: 100%;
-	color: white;
-}
-
-
-input {
-	display: flex;
-	width: 100%;
-	padding: 20px;
-	justify-content: center;
-	color: white;
-}
-
-input:focus,
-input:hover {
-	justify-content: center;
-	transition: 1s;
-	background-color: transparent;
-}
-
-
-
-button:hover {
-	background-color: #da0091;
-	transition: 1s;
-}
-
-/* ============================================================================================ */
-
-/* FOOTER STARTS HERE */
-footer {
-	background-color: #000000;
-	color: #fff;
-	width: 100%;
-}
-
-.footer_container {
-	padding: 20px;
-	text-align: center;
-	float: none;
-}
-
-.footer_container .bottom_text {
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
-
-/* FOOTER ENDS HERE */
-
-/*  NAVIGATION STARTS HERE */
-.navigation {
-	margin: 0;
-}
-
-.brand {
-	/* Your brand logo */
-	font-size: 16px;
-	line-height: 50px;
-	display: inline;
-	margin-right: 30px;
-	padding-right: 40px;
-}
-
-.brand img {
-	border-right: 0.5px solid #ffffff;
-	font-size: 16px;
-	line-height: 50px;
-	display: inline;
-	margin-right: 30px;
-	padding-right: 40px;
-	width: 80px;
-}
-
-
-
-/* Added font-size: 0; to get rid of the space between lists */
-nav {
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	color: black;
-	z-index: 1;
-}
-
-/* Declaring font-size for the anchor element to be 16px since it is 0 on the above code */
-nav a {
-	font-size: 16px;
-}
-
-
-
-.control:checked~.conditional,
-#immigrant:checked~.conditional,
-#required-2:checked~.conditional #option-2:checked~.conditional {
-	width: auto;
+.brand > img{
+	width: 8vh;
 	height: auto;
-	margin: 30px;
-	padding: 10px;
-	align-items: center;
-	clip: auto;
-	overflow: visible;
-	position: static;
-	justify-content: center;
-	width: auto;
-	border-radius: 10px;
-	color: white;
 }
-
-.control:not(:checked)~.conditional,
-#immigrant:not(:checked)~.conditional,
-#required-2:not(:checked)~.conditional,
-#option-2:not(:checked)~.conditional {
-
-	clip: rect(0 0 0 0);
-	display: flex;
-	justify-content: flex-start;
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	color: red;
-}
-
-
-
-
-.form1 {
-	display: flex;
-	align-items: center;
-}
-
-
-
 .rate {
-	float: left;
-	height: 46px;
-	padding: 0 10px;
+	display: flex;
+	position: left;
 }
 
 .rate:not(:checked)>input {
@@ -216,12 +42,12 @@ nav a {
 }
 
 .rate>input:checked~label {
-	color: #ffc700;
+	color: #ebd726;
 }
 
 .rate:not(:checked)>label:hover,
 .rate:not(:checked)>label:hover~label {
-	color: #deb217;
+	color: #c20df0;
 }
 
 .rate>input:checked+label:hover,
